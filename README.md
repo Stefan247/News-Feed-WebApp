@@ -1,6 +1,6 @@
 # News-Feed-WebApp
 
-## The application consist of a page containing posts (blog-type) written by other users
+## The application consists of a page containing posts (blog-type) written by other users
 
 There are different types of users:
 - who can only read and react to posts
