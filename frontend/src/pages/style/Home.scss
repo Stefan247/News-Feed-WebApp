@@ -1,0 +1,100 @@
+content {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30vw;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .post {
+    justify-content: center;
+  }
+}
+
+.post {
+  background: rgba(83, 83, 255, 0.1);
+  width: 45vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 8px 8px 0px;
+  overflow-wrap: break-word;
+  &:hover {
+    box-shadow: rgba(83, 83, 255, 0.1) 0px 10px 10px 0px;
+  }
+
+  .title {
+    height: 50px;
+    border-bottom: 3px solid lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #000018;
+    display: inline-grid;
+    place-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    &:hover {
+      background-color: #220029;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    flex: 80%;
+    display: inline-block;
+    place-content: center;
+    min-height: 100px;
+    height: auto;
+    padding: 25px;
+    overflow: auto;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+  }
+
+  .footer {
+    height: 40px;
+    border-top: 3px solid lightgray;
+    padding: 0px 0px 4px 0px;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000018;
+    color: white;
+    .author {
+      padding: 0px 0px 0px 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      &:hover {
+        color: rgb(187, 189, 188);
+        cursor: pointer;
+      }
+    }
+    .date {
+      font-family: Verdana, sans-serif;
+      padding: 0px 25px 0px 0px;
+    }
+
+    .likebar{
+      margin-right: 15px;
+      .likedButton {
+        color:lightgrey;
+        cursor: pointer;
+        &:hover {
+          color:grey;
+        }
+        &:active {
+          color:lightgrey;
+        }
+      }
+    }
+  }
+}

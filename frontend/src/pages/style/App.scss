@@ -1,0 +1,102 @@
+.App {
+  width: 98vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.myInfo {
+  color:white;
+  position: absolute;
+  right: 8vw;
+  color: burlywood;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+
+  .myName {
+    margin-right: 2vw;
+  }
+
+  .myRole {
+    color: goldenrod;
+  }
+}
+
+body {
+  background-image: url("../../Media/black-background.jpg");
+}
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  background-color: #000018;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: rgba(59, 59, 87, 0.1) 0px 0px 0px 7.5px;
+  }
+
+  button {
+    background: #000018;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: absolute;
+    right: 1vw;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    &:hover {
+      background-color: #ddd;
+      color: #000018;
+      cursor: pointer;
+    }
+  }
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000018;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.footernav {
+  position:fixed;
+  bottom: 0px;
+  background-color: #000018;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  height: 20px;
+  .edit-lang {
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}

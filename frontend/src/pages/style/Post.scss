@@ -1,0 +1,156 @@
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+  
+.leftSide {
+  background:rgba(83, 83, 255, 0.1);
+  width: 50vw;
+  height: 70vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 8px 8px 0px;
+  overflow-wrap: break-word;
+  &:hover {
+    box-shadow: rgba(83, 83, 255, 0.1) 0px 10px 10px 0px;
+  }
+  
+  .title {
+    height: 50px;
+    border-bottom: 3px solid lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #000018;
+    display: inline-grid;
+    place-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .content {
+    flex: 80%;
+    display: inline-block;
+    place-content: center;
+    min-height: 100px;
+    height: auto;
+    padding: 25px;
+    overflow: auto;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+  }
+  
+  .footer {
+    height: 35px;
+    border-top: 3px solid lightgray;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000018;
+    color: white;
+    .author {
+      padding: 0px 0px 0px 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      &:hover {
+        color: rgb(187, 189, 188);
+        cursor: pointer;
+      }
+    }
+    .date {
+      font-family: Verdana, sans-serif;
+      padding: 0px 25px 0px 0px;
+    }
+    .footer-buttons {
+      height: 70%;
+      display: flex;
+      justify-content: flex-end;
+      .delete-post-button {
+        margin-right: 15px;
+      }
+      .edit-post-button {
+        margin-right: 15px;
+        color: rgb(0, 151, 0);
+        border-color: rgb(0, 151, 0);
+      }
+    }
+  }
+}
+    
+.rightSide {
+  background:rgba(83, 83, 255, 0.1);
+  border: 2px solid black;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 4vw;
+  margin-right: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+  .comment-list {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    height: auto;
+    padding: 25px;
+    overflow: auto;
+    background: rgba(83, 83, 255, 0.1);
+    margin: 5px;
+    .comment-container {
+      background: rgba(0, 0, 32, 0.8);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 25px;
+      color: white;
+      display: grid;
+      .comment-author {
+        text-align: left;
+        height: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkkhaki;
+        padding-bottom: 5px;
+        &:hover {
+          color: rgb(187, 189, 188);
+          cursor: pointer;
+        }
+      }
+      .comment {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow: auto;
+      }
+      .delete-button {
+        width: 30px;
+        height: 25px;
+        margin-top: 5px;
+      }
+    }
+ }
+
+  .comment-input {
+    display: flex;
+    flex-direction: row;
+    .comment-body {
+      width: 80%;
+      margin-left: 5px;
+    }
+    .comment-send {
+      width: 19%;
+      margin-bottom: 1px;
+      margin-right: 1px;
+    }
+  }
+}

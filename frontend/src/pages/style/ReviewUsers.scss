@@ -1,0 +1,71 @@
+.users-page {
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2);
+    width: 750px;
+    height: 80vh;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 0px;
+    overflow: auto;
+    .user-container {
+        background: rgba(0, 0, 32, 0.8);
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        min-height: 6vh;
+        justify-content: space-around;
+        align-items: center;
+        overflow: auto;
+        .username {
+            min-width: 3vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkkhaki;
+            max-width: 10vw;
+            overflow: hidden;
+            &:hover {
+                color: rgb(187, 189, 188);
+                cursor: pointer;
+            }
+        }
+        .email {
+            min-width: 5vw;
+            max-width: 20vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: auto;
+        }
+        .role {
+            min-width: 2vw;
+            color: goldenrod;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+        }
+        .role-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 3vw;
+            .user-change-button {
+                margin-left: 1vw;
+                margin-right: 1vw;
+                min-width: 2vw;
+                max-width: 4vw;
+                height: 3vh;
+                color: yellowgreen;
+                border-color: yellowgreen;
+            }
+            .user-delete-button {
+                margin-left: 1vw;
+                margin-right: 1vw;
+                width: 4vw;
+                height: 3vh;
+            }
+        }
+    }
+}
